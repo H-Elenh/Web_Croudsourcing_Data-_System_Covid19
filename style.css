@@ -1,0 +1,176 @@
+
+
+/*leaflet setting*/
+.leaflet-fade-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-zoom-animated{ 
+	will-change:auto !important; 
+	}
+	#map { 
+		width: 100%;
+		height: 600px;
+		margin-bottom: 40px;	
+	 }
+
+
+/*mobile settings*/
+
+@media screen and (max-width: 455px){ 
+		.ourHead{
+		background-color: rgb(248, 200, 220);
+		padding-top: 20px;
+		border-bottom: #363C45 3px solid;
+		}
+
+		#container {
+			display:flex;
+			flex-direction: column;
+		}
+
+		#container button, input {
+			width: 60%;
+		}
+
+		#container input[type=text] {
+			width: 70%;
+		}
+
+		
+	}
+	/*mobile style for larger screens - up to 618*/
+	@media screen and (max-width: 618px){ 
+		#container {
+			flex-direction: column; /*stack*/
+			display:flex;
+		}
+		#container input[type=text] {
+			width: 60%;
+		}
+		#container button, input {
+			width: 65%;
+		}
+	} /*end mobile settings*/
+	
+	
+	
+	/*general settings*/
+
+	h1{
+		font-family:FreeMono, monospace;
+		margin: 1em 0; 
+		margin-left:10px;
+	}
+	
+	h2, h3, h4, h5, h6, p {
+		font-family:FreeMono, monospace;
+		margin: 1em 0; 
+	}
+
+	body {
+		font-family: FreeMono;
+		background-image: url("background.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;		
+	}
+
+	* { /*make sure headers fit page without margins*/
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	} 
+
+	a { /*links*/
+		text-decoration: underline;
+		color: #800080
+	}
+
+
+
+	/*buttons and inputs*/
+	button, input [type=submit] {  
+	border: rgb(102, 0, 102);
+	background-color:#d797f7;
+	border: 1px solid purple;
+	cursor: pointer;
+	}
+	
+	#lilac_button {/*fave button*/
+		background-color: #d797f7 ;
+		padding: 6px;
+		border: 1px solid purple;
+		border-radius: 4px;
+		margin-top:10px;
+	}
+	
+	#container {
+		display: flex;
+		justify-content: left;
+		margin-top: 20px;
+		margin-left:15px;
+	}	
+	
+	#container input[type=date] {
+		margin: 10px;	
+	}
+	
+	/*FORMS*/
+	input [type=submit] {
+		background-color: #d797f7 ;
+		padding: 6px;
+		border: 2px solid purple;
+		border-radius: 4px;
+		font-weight: bold;
+	}
+	
+	input   [type=text],[type=password],[type=email], label{
+		display: block;
+		margin-bottom: 1rem;
+		font-family:FreeMono, monospace;
+	}
+
+	.form_and_lists{
+		widows:150px;
+		height:auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -184px 0px 0px -155px;
+		background: #FEE9E4;
+		padding:0 25px 65px 20px;
+		border-radius: 5px;
+		border: 1px solid purple;
+		display: block;
+		font-family:FreeMono, monospace;
+	}
+
+	
+	/* HEADER*/
+	
+	.ourHead{
+		background-color: rgb(248, 200, 220);
+		padding-top: 20px;
+		border-bottom: #363C45 3px solid;
+	}
+	
+
+	/*TABLES*/
+	
+	.tbl, td,th {
+	border: 1px solid purple;
+	background-color: pink;
+	text-align: center;
+	width: 50%;
+	table-layout:fixed;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial;
+	margin-bottom:15px;
+	}
+	
+	/*page fit*/
+	#lefter{
+		margin-left: 15px;
+	}
+
+	
